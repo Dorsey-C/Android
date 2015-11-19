@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+
+    <TextView android:id="@+id/looper_child_thread_textview"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="@android:color/holo_orange_dark"/>
+    <Button android:id="@+id/main_thread_button"
+        style="@style/MyShapeButtonStyle"
+        android:text="主线程启动handler"
+        />
+    <Button android:id="@+id/child_thread_button"
+        style="@style/MyShapeButtonStyle"
+        android:text="子线程启动handler"
+        />
+</LinearLayout>

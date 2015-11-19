@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xhsc.layout.relativelayout"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="14" />
+
+    <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:targetPackage="com.xhsc.layout.relativelayout" >
+    </instrumentation>
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.WRITE_SMS"/>
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/meinv"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <uses-library android:name="android.test.runner" />
+
+        <activity
+            android:name="com.xhsc.handler.HandlerStartActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.xhsc.learn.main.MainActivity" >
+        </activity>
+        <activity
+            android:name="com.xhsc.layout.relativelayout.LayoutActivity"
+            android:label="布局学习" >
+        </activity>
+        <activity
+            android:name="com.xhsc.layout.relativelayout.FrameLayoutActivity"
+            android:label="单帧布局" >
+        </activity>
+        <activity
+            android:name="com.xhsc.layout.relativelayout.Linear_LayoutActivity"
+            android:label="线性布局" >
+        </activity>
+        <activity
+            android:name="com.xhsc.layout.relativelayout.GridLayoutActivity"
+            android:label="网格布局" >
+        </activity>
+        <activity
+            android:name="com.xhsc.layout.relativelayout.TableLayoutActivity"
+            android:label="表格布局" >
+        </activity>
+        <activity
+            android:name="com.xhsc.layout.linearlayoutactivity.LinearLayoutActivity"
+            android:label="主线性布局" >
+        </activity>
+        <activity
+            android:name="com.xhsc.layout.relativelayout.RelativeLayoutActivity"
+            android:label="相对布局" >
+        </activity>
+        <activity
+            android:name="com.xhsc.layout.widget.TextViewActivity"
+            android:label="基础控件单行显示跑马灯" >
+        </activity>
+        <activity
+            android:name="com.xhsc.layout.widget.ButtonActivity"
+            android:label="按钮控件学习自定义" >
+        </activity>
+        <activity
+            android:name="com.xhsc.layout.widget.EditTextActivtiy"
+            android:label="微信登录界面学习" >
+        </activity>
+        <activity
+            android:name="com.xhsc.layout.widget.ImageViewActivity"
+            android:label="imageView控件学习" >
+        </activity>
+        <activity
+            android:name="com.xhsc.layout.event.EventActivity"
+            android:label="android触发事件" >
+        </activity>
+        <activity
+            android:name="com.xhsc.layout.widget.RadioActivity"
+            android:label="单选按钮控件学习" >
+        </activity>
+        <activity
+            android:name="com.xhsc.launchmodel.StandardActivity"
+            android:label="四种启动模式之标准模式" >
+        </activity>
+        <activity
+            android:name="com.xhsc.launchmodel.SingleInstanceActivtiy"
+            android:label="四种启动模式之单实例模式"
+            android:launchMode="singleInstance" >
+        </activity>
+        <activity
+            android:name="com.xhsc.parameter.ParameterStatusActivity"
+            android:label="Activity参数类型传递学习" >
+        </activity>
+        <activity
+            android:name="com.xhsc.parameter.ParameterReceiveActivity"
+            android:label="Activity参数类型传递接收端" >
+        </activity>
+        <activity
+            android:name="com.xhsc.layout.ui.listview.ListViewAdapterActivity"
+            android:label="ListView_Adapter" >
+        </activity>
+        <activity
+            android:name="com.xhsc.layout.ui.meituan.MeiTuanSimpleAdapterActivity"
+            android:label="仿美团SimpleAdapter" >
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.xhsc.learn.main.MainActivity"/>
+            <intent-filter>
+                <action android:name="com.xhsc.menu" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.xhsc.layout.ui.mysimpleadapter.MySimpleAdapterActivity"
+            android:label="自定义BaseAdapter" >
+            
+        </activity>
+        <activity
+            android:name="com.xhsc.layout.ui.meituan.MeiTuanMyBaseAdapterActivity"
+            android:label="自定义访美团BaseAdapter" >
+        </activity>
+        <activity
+            android:name="com.xhsc.layout.ui.spinners.SpinnersActivity"
+            android:label="自定义SpinnerBaseAdapter" >
+        </activity>
+        <activity
+            android:name="com.xhsc.layout.ui.gridview.GridViewActivity"
+            android:label="自定义九宫格布局GridViewActivity" >
+        </activity>
+        <activity
+            android:name="com.xhsc.layout.ui.viewpager.ViewPagerActivity"
+            android:label="自定义滑屏控件ViewPager" >
+        </activity>
+        <activity
+            android:name="com.xhsc.layout.ui.progressbar.ProgressBarActivity"
+            android:label="自定义进度条控件ProgressBar" >
+        </activity>
+        <activity
+            android:name="com.xhsc.layout.ui.dialog.ProgressDialogActivty"
+            android:label="自定义对话框Dialog" >
+        </activity>
+        <activity
+            android:name="com.xhsc.layout.ui.tabhost.TabHostActivity"
+            android:label="自定义引导选项卡TabHost" >
+        </activity>
+        <activity
+            android:name="com.xhsc.layout.ui.tabhost.RadioTabHostActivity"
+            android:label="自定义RadioButtonTabHost" >
+        </activity>
+        <activity
+            android:name="com.xhsc.layout.ui.menu.MenuActivity"
+            android:label="菜单MenuActivity" >
+        </activity>
+        <activity
+            android:name="com.xhsc.layout.ui.stylesshape.MyShapeActivity"
+            android:label="Shape自定义美化控件" >
+        </activity>
+        <activity
+            android:name="com.xhsc.handler.HandlerActivity"
+            android:label="handler子线程消息处理" >
+        </activity>
+        <activity
+            android:name="com.xhsc.handler.HandlerMainThreadStartActivity"
+            android:label="handler主线程子线程启动消息处理" >
+        </activity>
+        <activity
+            android:name="com.xhsc.store.sharedpreference.SharePreferenceActivity"
+            android:label="永久存储SharedPreference" >
+        </activity>
+        <activity
+            android:name="com.xhsc.store.file.StoreFileActivity"
+            android:label="文件内部外部存储StoreFileActivity" >
+        </activity>
+        <provider android:name="com.xhsc.store.provider.ContentProviderHelper"
+            android:authorities="com.xhsc.store.provider"></provider>
+        <activity
+            android:name="com.xhsc.service.TestServcieActivity"
+            android:label="组件服务Service之StartService" >
+        </activity>
+        <activity
+            android:name="com.xhsc.internet.InternetActivity"
+            android:label="获取网络图片" >
+        </activity>
+        <activity
+            android:name="com.xhsc.internet.InternetCacheActivity"
+            android:label="网络缓存图片查看器" >
+        </activity>
+        <activity
+            android:name="com.xhsc.broadcast.BroadcastSendActivity"
+            android:label="广播消息" >
+        </activity>
+        <activity
+            android:name="com.xhsc.notification.NotificationActivity"
+            android:label="发送通知" >
+            
+        </activity>
+        <activity
+            android:name="com.xhsc.async.MyAsyncActivity"
+            android:label="异步任务" >
+            
+        </activity>
+        <activity
+            android:name="com.xhsc.async.DownLoadAsyncActivity"
+            android:label="异步下载网络图片" >
+            
+        </activity>
+        <activity
+            android:name="com.xhsc.webview.WebViewActivity"
+            android:label="Html网页加载" >
+            
+        </activity>
+        <activity
+            android:name="com.xhsc.webview.WebRequestActivity"
+            android:label="请求服务器数据" >
+            
+        </activity>
+        
+        <receiver android:name="com.xhsc.broadcast.MyBroadcastReceiver"
+            >
+            <intent-filter android:priority="1000">
+                <action android:name="com.xhsc.broadcast.ACTION_SMS_RECEIVER"/>
+                <action android:name = "android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.xhsc.notification.MusicService"></service>
+        <service android:name="com.xhsc.service.MyService"></service>
+    </application>
+
+</manifest>

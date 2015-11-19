@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">linearLayout</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="first_name">第一个元素</string>
+    <string name="second_name">第二个元素</string>
+    <string name="third_name">第三个元素</string>
+    <string name="fourth_name">第四个元素</string>
+    <string name="fiveth_name">第五个元素</string>
+    <string name="six_name">第六个元素</string>
+    <string name="edittext_count">请输入用户名....</string>
+    <string name="edittext_password">请输入密码....</string>
+    <string name="button_login">登录</string>
+    <string name="button_register">注册</string>
+    <string name="button_one">按钮一</string>
+    <string name="button_two">按钮二</string>
+    <string name="button_three">按钮三</string>
+    <string name="text_content">11岁小学生被起诉撞倒八旬老太 其父母判赔7万习近平普京莫迪在纽约将下榻同一家中国酒店</string>
+	<string name="text_count">用户名</string>
+	<string name="text_password">密码 </string>
+	<string name="button_confirm">确定</string>
+	<string name="notification_title">双十一降价通知</string>
+	<string name="notification_content">全场商品，一律一折</string>
+</resources>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- TabHost本身是单帧布局，TabHost需要添加android:id="@android:id/tabhost"否则报错 -->
+    <!-- TabWidget 需要添加android:id="@android:id/tabs" 否则会解析错误 -->
+    <!-- TabHost 的内容布局控件需要添加android:id="@android:id/tabcontent" -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <!-- 引导选项卡TabWidget有三种可见方式，通过visibility属性设置  visible可见占位  invisible不可见占位 gone不可见不占位 -->
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/title_bar"
+            android:visibility="gone" >
+        </TabWidget>
+
+        <RadioGroup
+            android:id="@+id/tab_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/title_bar"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/tab_radio_one"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="true"
+                android:drawableTop="@drawable/tab_indector_selector_one"
+                android:gravity="center_horizontal"
+                android:paddingRight="30dp"
+                android:text="首页"
+                android:textColor="@drawable/tab_indector_textcolor_selector" />
+
+            <!-- 去掉RadioButton的默认选折按钮使用属性button=“@null”隐藏 -->
+
+            <RadioButton
+                android:id="@+id/tab_radio_two"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/tab_indector_selector_two"
+                android:paddingRight="30dp"
+                android:gravity="center_horizontal"
+                android:text="商家"
+                android:textColor="@drawable/tab_indector_textcolor_selector" />
+
+            <RadioButton
+                android:id="@+id/tab_radio_three"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center_horizontal"
+                android:drawableTop="@drawable/tab_indector_selector_three"
+                android:text="设置"
+                android:textColor="@drawable/tab_indector_textcolor_selector" />
+        </RadioGroup>
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/tab_radio_group" >
+        </FrameLayout>
+    </RelativeLayout>
+
+</TabHost>

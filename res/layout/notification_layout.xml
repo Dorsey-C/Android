@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/notification_send_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发送通知" />
+    <Button
+        android:id="@+id/notification_update_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="更新通知" />
+    <Button
+        android:id="@+id/notification_clear_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="清除通知" />
+    <Button
+        android:id="@+id/notification_navigation_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="导航通知" />
+    <Button
+        android:id="@+id/notification_downloadprogress_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="下载进度通知" />
+    <Button
+        android:id="@+id/notification_downLoadindetermin_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="不确定模式进度" />
+    <Button
+        android:id="@+id/notification_bigview_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="大视图通知" />
+    <Button
+        android:id="@+id/notification_mydefinition_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="自定义通知" />
+
+</LinearLayout>

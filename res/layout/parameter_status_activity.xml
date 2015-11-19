@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView 
+       
+        android:id="@+id/parameter_status_textveiw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:text="参数传递类型" />
+	<Button 
+	    android:id="@+id/parameter_java_base_status_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onJavaBaseStatusClicklistener"
+        android:text="java基本数据类型"
+	    />
+	
+	<Button 
+	    android:id="@+id/parameter_Bundle_status_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onBundleStatusClicklistener"
+        android:text="Bundle对象数据类型"
+	    />
+	
+	<Button 
+	    android:id="@+id/parameter_serializable_status_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onSerializableStatusClicklistener"
+        android:text="serializable序列化对象数据类型"
+	    />
+	
+	<Button 
+	    android:id="@+id/parameter_parcelable_status_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onParcelableStatusClicklistener"
+        android:text="parcelable对象数据类型"
+	    />
+</LinearLayout>

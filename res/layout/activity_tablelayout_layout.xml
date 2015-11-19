@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@android:color/holo_orange_light">
+
+    <TableRow>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            
+            android:text="@string/first_name" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           
+            android:text="@string/second_name" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            
+            android:text="@string/third_name" />
+    </TableRow>
+    
+    <TableRow>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           
+            android:text="@string/fourth_name" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            
+            android:text="@string/fiveth_name" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            
+            android:text="@string/six_name" />
+    </TableRow>
+
+</TableLayout>

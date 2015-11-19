@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <!-- 渐变色 gradient-->
+    <TextView android:id="@+id/shape_gradient_textView"
+        style="@style/MyShapeStyle"
+        android:text="渐变色"
+        android:background="@drawable/shape_gradient"/>
+
+    
+    <TextView android:id="@+id/shape_solid_textview"
+        style="@style/MyShapeStyle"
+        android:text="填充solid"
+        android:background="@drawable/shape_solid"/>
+    
+    <TextView android:id="@+id/shape_stroke_textview"
+        style="@style/MyShapeStyle"
+        android:text="描边stroke"
+        android:background="@drawable/shape_stroke"/>
+    
+    <TextView android:id="@+id/shape_corners_textview"
+        style="@style/MyShapeStyle"
+        android:text="倒圆角corners"
+        android:background="@drawable/shape_corners"/>
+    
+    <TextView
+        android:id="@+id/MyShapeButtonStyle"
+       style="@style/MyShapeButtonStyle"
+        android:text="自定义按钮"
+        android:clickable="true"
+        android:background="@drawable/shape_button_drawable_selector" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+     android:shape="oval">
+     <!-- 只有rectangle矩形 oval椭圆形填充起作用，线性要报错 -->
+    <solid android:color="@android:color/holo_green_light"/>
+
+</shape>
